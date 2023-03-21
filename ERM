@@ -1,0 +1,144 @@
+import "./Erm.css"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
+import Card from 'react-bootstrap/Card';
+
+
+
+
+
+
+
+import 'font-awesome/css/font-awesome.min.css';
+function Erm(){
+    return(
+        <div>
+            <Navbar id='hello' collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">erm</Navbar.Brand>
+      
+          <Nav className="me-auto">
+          <i style={{color:"white"}}  class="fa-solid fa-gauge-simple-max"></i>
+            <Nav.Link href="#features" style={{color:"white"}}>Dosh borad</Nav.Link>
+
+            <Nav.Link href="#pricing" style={{color:"white"}}>Trending Topics</Nav.Link>
+
+            <Nav.Link href="#pricing" style={{color:"white"}}> <i style={{color:"white"}} class="fa fa-address-card" aria-hidden="true"></i>Contact</Nav.Link>
+           
+          </Nav>
+          <Nav>
+          <i style={{color:"white",marginTop:"10px"}} class="fa fa-user" aria-hidden="true"></i>
+          <NavDropdown  style={{color:"white"}} title="Hari"  id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+           
+          </Nav>
+          <i style={{color:"white"}}  class="fa fa-bell" aria-hidden="true"></i>
+  
+      </Container>
+    </Navbar>
+
+    <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Ineffective Descision Making</Navbar.Brand>
+          <Form className="d-flex">
+            <input type="text"  id="input" className="form-control" placeholder="text" /><i id="icon" class="fa fa-search" aria-hidden="true"></i>
+                    
+                     </Form>
+      </Container>
+    </Navbar>
+
+
+<div id="harikumar">
+<div id='hari'>
+    <Card style={{ width: '38rem',height:"34rem" }}>
+      <Card.Body>
+        <Card.Title>02 Ineffective Descision Making</Card.Title> 
+        <Card.Title id="lll" style={{display:"inline-block"}} >
+          <h6  style={{color:"red",display:"inline-block",float:"right"}}>Edit<i style={{color:"red"}} class="fa fa-pencil" aria-hidden="true"></i></h6></Card.Title>
+        <hr></hr>
+        <Card.Subtitle className="mb-2 text-muted">Risck Rating</Card.Subtitle>  <h4 id="app">HIGH</h4>
+        <hr></hr>
+        <Card.Text>
+        Ineffective Descision Making due to incorrect evaluation and reporting operational perforamance
+        </Card.Text>
+        <hr></hr>
+        <Card.Text  style={{display:"inline-block"}}>Risck category</Card.Text>
+        <Card.Text style={{display:"inline-block",float:"right"}}>Operational</Card.Text>  &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
+
+        <hr></hr>
+        <i class="fa fa-paperclip" aria-hidden="true"></i> Attachment 4 <br/>
+
+    
+<div className="col-md-12">
+   <Card.Img className="img img-responsive" src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__480.jpg"/>
+
+   <Card.Img className="img img-responsive" src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__480.jpg"/>
+
+   <Card.Img className="img img-responsive" src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__480.jpg"/>
+
+</div>
+   
+        {/* <Card.Img id="pic" src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__480.jpg"/> */}
+    
+      </Card.Body>
+    </Card>
+
+    </div>
+
+<div d='hari'>
+<Card style={{ width: '38rem',height:"31rem" ,backgroundColor:"lightgray"}}>
+      <Card.Body>
+        <Card.Title><i class="fa fa-comment" aria-hidden="true"></i>Messages</Card.Title>
+        <br/>
+        <Card.Subtitle className="mb-2 text-muted" style={{backgroundColor:"grey"}} id="team2">Lorem ipusam dolor sit amet</Card.Subtitle>
+        <br/><br/>
+        <h6>priyanaka mishra</h6> <p id="time">5min</p>
+        <br/><br/>
+        <Card.Text  style={{backgroundColor:"grey"}}  id="team1">
+          Lorem ipusam dolor sit amet consectetur adipiscing elit.Nullom in auam a dui en ckjh jeldioco
+        </Card.Text>
+        <br></br><br/><br/><br/>
+          <h6>Sanjit kumar podeys</h6><p id="time">10min</p>
+          <br/><br/>
+        <Card.Text id='okk'>Messages</Card.Text><br></br>
+        <i id="mam" class="fa fa-paper-plane" aria-hidden="true"></i> 
+      </Card.Body>
+    </Card>
+
+</div>
+</div>
+<br/><br/>
+
+
+<div id="button">
+    <>
+      <Button variant="secondary"  size="lg" active>
+        Delete
+      </Button>{' '}
+      <Button  variant="primary" size="lg" active>
+        Approve?
+      </Button>
+    </>
+</div>
+
+    </div>
+
+       
+    )
+}
+export default Erm;
